@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+'''XOR 3 is a combo of 1 and 2, because it uses the message itself
+and a key to XOR together.'''
+
 import random
 import string
 from itertools import cycle

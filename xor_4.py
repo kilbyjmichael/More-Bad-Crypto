@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
-'''When using XOR, it is recomended to have a key as long as your message
-to stop repeating characters. Repeating characters are discoverable, using
-repeated space or character searching.'''
+'''I wanted to mess with actual math.'''
 
 import random
 import string
@@ -16,7 +14,9 @@ def genKey(size = 16):
 def msgxor(message, key):
     output = ""
     for char, key_char in zip(message, key):
-        output += chr(ord(char) ^ ord(key_char))
+        char1 = ord(char)
+        key_char1 = ord(key_char)
+        output += chr((char1 * 2) / key_char1)
     return output.encode("hex") + "$" + key.encode("hex")
 
 def main():

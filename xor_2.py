@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+'''I attempted to make a XOR that didn't need a key.
+The closest I got was using the same character shifted.'''
+
 import random
 
 secret = raw_input("Enter your plaintext -> ")
